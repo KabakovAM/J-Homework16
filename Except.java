@@ -98,6 +98,7 @@ public class Except {
         String fileName = input[0] + ".txt";
         try (FileWriter writer = new FileWriter(fileName, true)) {
             writer.append(input[0] + " " + input[1] + " " + input[2]+  " " + input[3] + " " + input[4] + " " + input[5] + "\n");
+            System.out.println("Запись успешно добавлена");
         } catch (IOException e) {
             System.out.println("Ошибка с записью в файл.");
         }
